@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!--  Oracle 10g Configuration -->
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="connection.url">jdbc:oracle:thin:@[DB_SERVER]:1521:orcl</property>
+        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="connection.username">[DB_USER]</property>
+        <property name="connection.password">[DB_PWD]</property>
+        <property name="connection.pool_size">10</property>
+
+        <!-- SQL debug parameters -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hibernate.jdbc.use_streams_for_binary">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <!-- Entities -->
+        <mapping class="my.experiments.database.entity.SendCount"/>
+        <mapping class="my.experiments.database.entity.TimezoneSendCount"/>
+
+    </session-factory>
+</hibernate-configuration>
