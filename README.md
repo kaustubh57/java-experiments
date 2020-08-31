@@ -4,5 +4,6 @@
 - file
 - java memory management
   - escaping references
+  - soft leaks
 - number
 - regex
