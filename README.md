@@ -7,3 +7,4 @@
   - soft leaks
 - number
 - regex
+- recursive exponent
