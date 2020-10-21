@@ -8,3 +8,7 @@
 - number
 - regex
 - recursive exponent
+- functional programming
+    - method reference - `ClassName::methodName`
+    - stream - of, filter
+    - lambda expression
